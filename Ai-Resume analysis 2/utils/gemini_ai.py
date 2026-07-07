@@ -92,32 +92,82 @@ Generate a professional report with:
 # ---------------------------------------------------
 # Career Roadmap
 # ---------------------------------------------------
-def generate_learning_roadmap(resume_text, jd_text, api_key=None):
+
+def generate_learning_roadmap(resume_text, jd_text, rewrite_style, api_key=None):
 
     prompt = f"""
-You are a career coach and mentor.
+You are a world-class resume writer, ATS optimization expert, HR recruiter, and career coach.
 
-Based on the candidate's resume and the target job description, create a
-personalized learning and career roadmap to help them close skill gaps.
+Your task is to rewrite the user's resume according to the selected rewrite style.
+
+Rewrite Style:
+{rewrite_style}
+
+IMPORTANT RULES:
+
+- Never invent work experience.
+- Never invent projects.
+- Never invent certifications.
+- Never invent skills.
+- Never change factual information.
+- Improve grammar and sentence structure.
+- Improve readability.
+- Improve ATS compatibility.
+- Use strong action verbs.
+- Quantify achievements wherever possible.
+- Make the resume modern and professional.
+- Keep the resume concise.
+- Preserve all factual information.
 
 Resume:
+
 {resume_text}
 
-Job Description:
-{jd_text}
+========================================================
 
-Generate:
+Return ONLY the rewritten resume.
 
-# Skill Gap Analysis
+Return it in EXACTLY this Markdown structure.
 
-# Recommended Courses / Certifications
+# Professional Summary
 
-# 30-60-90 Day Learning Plan
+...
 
-# Career Milestones
+# Skills
+
+...
+
+# Projects
+
+...
+
+# Experience
+
+...
+
+# Education
+
+...
+
+# Certifications
+
+...
+
+========================================================
+
+Rules:
+
+- Do NOT add extra headings.
+- Do NOT write explanations.
+- Do NOT say "Here is your rewritten resume."
+- Do NOT use tables.
+- Keep clean Markdown.
+- If a section is missing in the original resume, write "Not Available".
 """
 
     return ask_gemini(prompt, api_key)
+
+
 # ---------------------------------------------------
 # Interview Questions
 # ---------------------------------------------------

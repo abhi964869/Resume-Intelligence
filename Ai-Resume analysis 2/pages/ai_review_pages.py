@@ -182,7 +182,7 @@ Generate:
             ):
 
                 roadmap = generate_learning_roadmap(
-                    resume, jd
+                    jd
                 )
 
                 st.session_state[
