@@ -65,6 +65,27 @@ div[data-testid="stTabs"]{
 textarea{
     border-radius:14px!important;
 }
+/* ---------- Remove top spacing ---------- */
 
+.block-container{
+    padding-top:0.3rem !important;
+}
+
+header[data-testid="stHeader"]{
+    display:none;
+}
+
+div[data-testid="stToolbar"]{
+    display:none;
+}
+
+section[data-testid="stSidebar"]{
+    padding-top:0rem !important;
+}
+
+section[data-testid="stSidebar"] > div{
+    padding-top:0rem !important;
+}
+                
 </style>
 """, unsafe_allow_html=True)
