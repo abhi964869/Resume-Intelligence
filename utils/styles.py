@@ -67,10 +67,14 @@ textarea{
 }
 /* ---------- Remove top spacing ---------- */
 
+/* ---------- Main content spacing ---------- */
+
 .block-container{
-    padding-top:0.3rem !important;
+    padding-top:2rem !important;
+    padding-bottom:2rem !important;
 }
 
+/* Keep sidebar unchanged */
 section[data-testid="stSidebar"]{
     padding-top:0rem !important;
 }
