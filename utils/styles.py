@@ -70,7 +70,7 @@ textarea{
 /* ---------- Main content spacing ---------- */
 
 .block-container{
-    padding-top:2rem !important;
+    padding-top:4.5rem !important;
     padding-bottom:2rem !important;
 }
 
