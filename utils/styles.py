@@ -71,14 +71,6 @@ textarea{
     padding-top:0.3rem !important;
 }
 
-header[data-testid="stHeader"]{
-    display:none;
-}
-
-div[data-testid="stToolbar"]{
-    display:none;
-}
-
 section[data-testid="stSidebar"]{
     padding-top:0rem !important;
 }

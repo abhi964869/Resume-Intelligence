@@ -21,13 +21,7 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded",
 )
-st.markdown("""
-<style>
-[data-testid="stSidebarNav"] {
-    display: none;
-}
-</style>
-""", unsafe_allow_html=True)
+
 
 # ---------------------------
 # LOAD CSS
